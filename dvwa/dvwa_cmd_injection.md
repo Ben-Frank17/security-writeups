@@ -1,34 +1,39 @@
 # DVWA — Command Injection (low)
 
-**Target:** http://127.0.0.1/dvwa/vulnerabilities/exec/  
-**Date:** 2025-09-26  
-**Severity:** Low
+<div class="report-title">
+  <h1>Security Micro-Scan</h1>
+  <div class="kv">
+    <div><span>Client:</span> DVWA Lab</div>
+    <div><span>Date:</span> 2025-09-26</div>
+    <div><span>Author:</span> Braxton Beck (Ben-Frank17)</div>
+  </div>
+</div>
+
+<div class="box sev-high">
+<strong>Severity:</strong> High — Command injection allows arbitrary OS command execution.
+</div>
 
 ## Summary
-A command injection vulnerability allows unsanitized user input to be executed by the server shell. This lab demonstrates remote command execution in a controlled environment.
+The Command Injection module forwards user-supplied input to a shell without proper sanitization. This allows command chaining and execution under the web server user.
 
-## PoC (reproducible)
+## PoC
 **Payload:** `127.0.0.1 && whoami`  
 **Steps**
-1. Login to DVWA (`admin` / `password`) and set Security = **low**.  
+1. Login to DVWA and set Security = **low**.  
 2. Navigate to **Vulnerabilities → Command Injection**.  
-3. Enter the payload in the IP field and click **Submit**.  
-4. The application executes the shell command and returns the `whoami` output `veritaspc\beckb`. (see screenshot)
+3. Enter payload in the IP field and click **Submit**.  
+4. The page returns `whoami` output `veritaspc\beckb`, proving command execution.
 
 **Evidence**
-- Screenshot: `dvwa_cmd_injection.png` (shows `veritaspc\beckb`).
-
-## Technical notes
-The application passes user input directly to a shell without proper sanitization or whitelisting. This enables command chaining and arbitrary command execution.
+- Screenshot: `dvwa_cmd_injection.png` (shows `veritaspc\beckb`)
 
 ## Impact
-An attacker able to reach this endpoint can execute arbitrary OS commands as the web server user. This can lead to system compromise, data exposure, or privilege escalation depending on server configuration.
+Arbitrary command execution can lead to system compromise, data theft, lateral movement, or privilege escalation depending on server config.
 
-## Remediation (developer-ready)
-1. Do not pass raw user input to shell commands. Use safe APIs that avoid shell interpretation.  
-2. Implement strict input validation with a whitelist of allowed values (e.g., IP-only regex).  
-3. Run any required commands in a restricted, non-privileged environment and drop privileges.  
-4. Add monitoring and alerting for unexpected command execution patterns.
+## Remediation
+- Never pass raw input to a shell. Use safe APIs that avoid shell interpretation.  
+- Implement strict whitelisting (e.g., IP regex) for allowed input.  
+- Run required commands in minimal-privilege environments and log executions.
 
 ## Retest
-After fixes, retest using the same payload. Verify the server does not execute the command and returns a safe validation error.
+Confirm server rejects command separators and returns a validation error rather than executing commands.

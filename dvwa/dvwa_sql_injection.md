@@ -1,50 +1,39 @@
 # DVWA — SQL Injection (low)
 
-**Target:** http://127.0.0.1/dvwa/vulnerabilities/sqli/  
-**Date:** 2025-09-25  
-**Severity:** Low
+<div class="report-title">
+  <h1>Security Micro-Scan</h1>
+  <div class="kv">
+    <div><span>Client:</span> DVWA Lab</div>
+    <div><span>Date:</span> 2025-09-26</div>
+    <div><span>Author:</span> Braxton Beck (Ben-Frank17)</div>
+  </div>
+</div>
+
+<div class="box sev-high">
+<strong>Severity:</strong> High — SQL injection permits database data disclosure and authentication bypass.
+</div>
+
+## Summary
+The DVWA SQL Injection module accepts unsanitized input and interpolates it into SQL queries. An attacker can inject boolean or union payloads to retrieve database rows.
 
 ## PoC
-Payload used: 1' OR '1'='1
-explorer "C:\Users\beckb\Documents\security-writeups\dvwa"
-# Paths
-C:\Users\beckb\Documents\security-writeups = "C:\Users\beckb\Documents\security-writeups"
-C:\Users\beckb\Documents\security-writeups\dvwa = Join-Path C:\Users\beckb\Documents\security-writeups "dvwa"
-C:\Users\beckb\Pictures\ORCID.png = "C:\Users\beckb\Pictures\Screenshots\dvwa_sqli.png"  # your file
+**Payload:** `1' OR '1'='1`  
+**Steps**
+1. Login to DVWA (`admin` / `password`) and set Security = **low**.  
+2. Navigate to **Vulnerabilities → SQL Injection**.  
+3. Enter payload in the User ID field and click **Submit**.  
+4. Multiple user rows are returned indicating successful injection.
 
-# Create folder and copy screenshot
-New-Item -ItemType Directory -Path C:\Users\beckb\Documents\security-writeups\dvwa -Force | Out-Null
-if (-Not (Test-Path C:\Users\beckb\Pictures\ORCID.png)) { Write-Host "ERROR: source not found: C:\Users\beckb\Pictures\ORCID.png"; exit 1 }
-Copy-Item C:\Users\beckb\Pictures\ORCID.png -Destination (Join-Path C:\Users\beckb\Documents\security-writeups\dvwa "dvwa_sqli.png") -Force
-Write-Host "Copied screenshot -> C:\Users\beckb\Documents\security-writeups\dvwa\dvwa_sqli.png"
-
-# Create markdown writeup
- = @"
-# DVWA — SQL Injection (low)
-
-**Target:** http://127.0.0.1/dvwa/vulnerabilities/sqli/  
-**Date:** 2025-09-25  
-**Severity:** Low
-
-## PoC
-Payload used: 1' OR '1'='1  
-Reproduction steps:
-1. Open DVWA → Vulnerabilities → SQL Injection.
-2. Enter payload into User ID field and click Submit.
-3. Multiple user rows are returned showing successful injection. (see screenshot)
-
-![dvwa_sqli](dvwa_sqli.png)
-
-## Commands & outputs
-- nmap scan: dvwa_nmap.txt  
-- ffuf results: fuf.json  
-- sqlmap dump: sqlmap_output/
+**Evidence**
+- Screenshot: `dvwa_sqli.png`
 
 ## Impact
-Remote unauthenticated SQL injection allows disclosure of database rows.
+An attacker can read sensitive database contents, bypass authentication, and potentially modify data depending on DB privileges.
 
-## Fix
-Use prepared statements / parameterized queries and strict input validation.
+## Remediation
+- Use parameterized queries / prepared statements.  
+- Enforce strict input validation and type checks.  
+- Limit DB account privileges and enable query logging.
 
-## Notes
-Lab target. No real systems tested.
+## Retest
+Verify parameterized queries block the payload and that results no longer expose database rows.

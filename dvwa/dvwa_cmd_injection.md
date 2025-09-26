@@ -9,7 +9,7 @@ Payload used: 127.0.0.1 && whoami
 Steps:
 1. Open DVWA → Vulnerabilities → Command Injection.  
 2. Submit payload in IP field.  
-3. Application executes shell command and returns whoami output. (screenshot)
+3. Application executes shell command and returns `whoami` output `veritaspc\beckb`. (screenshot)
 
 ![dvwa_cmd_injection](dvwa_cmd_injection.png)
 

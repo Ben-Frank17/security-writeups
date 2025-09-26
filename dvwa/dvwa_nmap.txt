@@ -1,0 +1,13 @@
+# Nmap 7.98 scan initiated Fri Sep 26 09:58:14 2025 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sS -Pn -T4 -oN C:\\Users\\beckb\\Documents\\security-writeups\\dvwa\\dvwa_nmap.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00021s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+5357/tcp open  wsdapi
+
+# Nmap done at Fri Sep 26 09:58:14 2025 -- 1 IP address (1 host up) scanned in 0.16 seconds

@@ -1,3 +1,8 @@
+[![repo size](https://img.shields.io/github/repo-size/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups)
+[![last commit](https://img.shields.io/github/last-commit/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups/commits/main)
+[![license](https://img.shields.io/github/license/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups/blob/main/LICENSE)
+
+
 # Security Writeups — Braxton (Ben-Frank17)
 
 This repository is a portfolio of short, reproducible security lab writeups and evidence.  

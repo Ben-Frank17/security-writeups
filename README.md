@@ -1,60 +1,52 @@
-[![repo size](https://img.shields.io/github/repo-size/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups)
-[![last commit](https://img.shields.io/github/last-commit/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups/commits/main)
-[![license](https://img.shields.io/github/license/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups/blob/main/LICENSE)
+[![repo size](https://img.shields.io/github/repo-size/Ben-Frank17/security-writeups?color=blue)](https://github.com/Ben-Frank17/security-writeups)
+[![last commit](https://img.shields.io/github/last-commit/Ben-Frank17/security-writeups?color=green)](https://github.com/Ben-Frank17/security-writeups/commits/main)
+[![license](https://img.shields.io/github/license/Ben-Frank17/security-writeups?color=yellow)](LICENSE)
 
 # 🔐 Security Writeups — Braxton (Ben-Frank17)
 
+![Banner](assets/banner.png)
+
 This repository is a **portfolio of reproducible security lab writeups and evidence**.  
-It demonstrates **web vulnerability exploitation, recon, and reporting skills** performed in isolated, authorized labs (DVWA, TryHackMe, and similar).
+It demonstrates web vulnerability exploitation, recon, and reporting skills performed in isolated, authorized labs (DVWA, TryHackMe).
 
 ---
 
 ## 📂 Featured Reports
-- **SQL Injection**
-  - [Markdown](dvwa/dvwa_sql_injection.md) · [PDF](dvwa/dvwa_sql_injection.pdf)
-- **Command Injection**
-  - [Markdown](dvwa/dvwa_cmd_injection.md) · [PDF](dvwa/dvwa_cmd_injection.pdf)
-- **Reflected XSS**
-  - [Markdown](dvwa/dvwa_xss_reflected.md) · [PDF](dvwa/dvwa_xss_reflected.pdf)
-- **Stored XSS**
-  - [Markdown](dvwa/dvwa_xss_stored.md) · [PDF](dvwa/dvwa_xss_stored.pdf)
-- **File Upload**
-  - [Markdown](dvwa/dvwa_file_upload.md) · [PDF](dvwa/dvwa_file_upload.pdf)
+- **SQL Injection** · [MD](dvwa/dvwa_sql_injection.md) · [PDF](dvwa/dvwa_sql_injection.pdf)  
+  ![SQLi](dvwa/dvwa_sqli.png)
+- **Command Injection** · [MD](dvwa/dvwa_cmd_injection.md) · [PDF](dvwa/dvwa_cmd_injection.pdf)  
+  ![CMDi](dvwa/dvwa_cmd_injection.png)
+- **Reflected XSS** · [MD](dvwa/dvwa_xss_reflected.md) · [PDF](dvwa/dvwa_xss_reflected.pdf)  
+  ![XSS](dvwa/dvwa_xss_reflected.png)
+- **Stored XSS** · [MD](dvwa/dvwa_xss_stored.md) · [PDF](dvwa/dvwa_xss_stored.pdf)  
+  ![Stored XSS](dvwa/dvwa_xss_stored.png)
+- **File Upload** · [MD](dvwa/dvwa_file_upload.md) · [PDF](dvwa/dvwa_file_upload.pdf)  
+  ![Upload](dvwa/dvwa_file_upload.png)
 
 ---
 
-## 🛠️ Tech Stack
-- **Lab Targets:** DVWA, TryHackMe modules  
-- **Tools:** Nmap, Burp Suite, SQLmap, FFUF, custom scripts  
-- **Languages/Formats:** Markdown, PDF exports, GitHub Pages-ready structure
-
----
-
-## 📖 Report Format
-Each writeup follows the same structure:
+## 🧭 Report Format
+Each writeup follows:
 - **Summary**  
-- **Proof-of-Concept (payload + reproduction steps)**  
-- **Evidence (screenshots, scans, logs)**  
-- **Impact assessment**  
-- **Remediation guidance**  
+- **PoC (payload + reproduction steps)**  
+- **Evidence (screenshots, logs, scans)**  
+- **Impact and remediation**  
 - **Retest verification**
 
 ---
 
-## 👤 About Me
-Braxton (GitHub: [Ben-Frank17](https://github.com/Ben-Frank17))  
-USMC Veteran · Christain · Wanna be Hacker
+## 🛠 Tools & Methods
+- Recon: Nmap  
+- Web testing: manual testing, payloads, FFUF, sqlmap where applicable  
+- Deliverables: Markdown + PDF (client-ready)
 
-This repo is my **living portfolio**. It shows both technical ability and professional reporting style.  
+---
+
+## 👤 About
+Braxton (Ben-Frank17) — Cybersecurity student · USMC Veteran  
+Email: beck.braxton45@gmail.com · GitHub: https://github.com/Ben-Frank17/security-writeups
 
 ---
 
 ## ⚠️ Disclaimer
-All testing here was performed in **controlled, authorized labs**.  
-Do **not** run these techniques against systems you do not own or lack explicit permission to test.
-
----
-
-## 📬 Contact
-- **Email:** beck.braxton45@gmail.com  
-- **GitHub:** [Ben-Frank17/security-writeups](https://github.com/Ben-Frank17/security-writeups)
+All testing shown was performed in controlled, authorized labs. Do not run these techniques against systems you do not own or have permission to test.

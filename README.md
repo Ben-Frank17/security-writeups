@@ -58,3 +58,7 @@ Do not use these techniques against systems you do not own or lack explicit perm
 
 - **Email:** beck.braxton45@gmail.com  
 - **GitHub:** https://github.com/Ben-Frank17
+
+- **Cross Site Request Forgery (CSRF)**
+  - [Markdown](dvwa/dvwa_csrf.md)
+  - [PDF](dvwa/dvwa_csrf.pdf)

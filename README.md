@@ -1,4 +1,6 @@
-﻿# Security Writeups — Braxton (Ben-Frank17)
+﻿<p align="center"><img src="banner.png" alt="Banner" width="800"/></p>
+
+# Security Writeups — Braxton (Ben-Frank17)
 
 [![repo size](https://img.shields.io/github/repo-size/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups)
 [![last commit](https://img.shields.io/github/last-commit/Ben-Frank17/security-writeups)](https://github.com/Ben-Frank17/security-writeups/commits/main)
@@ -27,3 +29,4 @@ Do not run these techniques against systems you do not own or have explicit perm
 ## Contact
 📧 Email: beck.braxton45@gmail.com  
 🐙 GitHub: [Ben-Frank17](https://github.com/Ben-Frank17)
+

@@ -28,7 +28,7 @@
 - **Stored XSS** — [Markdown](dvwa/dvwa_xss_stored.md) • [PDF](dvwa/dvwa_xss_stored.pdf)
 - **File Upload** — [Markdown](dvwa/dvwa_file_upload.md) • [PDF](dvwa/dvwa_file_upload.pdf)
 - **Recon (Nmap)** — [Text](dvwa/dvwa_nmap.txt)
-
+- **CSRF (Low)** — [Markdown](dvwa/dvwa_csrf.md) | [PDF](dvwa/dvwa_csrf.pdf)
 ---
 
 ## 🛠️ Tools & Skills

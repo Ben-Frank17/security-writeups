@@ -1,21 +1,12 @@
-# OS
-.DS_Store
-Thumbs.db
+﻿# Ignore any banner files outside repo root
+dvwa/banner.png
+**/banner.png
 
-# IDEs / editors
+# Ignore raw screenshots anywhere
+**/Screenshots/**
+**/*.bmp
+**/*_copy.png
+
+# VS Code exports and temps
+*.pdf~
 .vscode/
-.idea/
-
-# Python
-__pycache__/
-*.pyc
-
-# Node
-node_modules/
-
-# logs and env
-*.log
-.env
-
-# temporary
-*.tmp

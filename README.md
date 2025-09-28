@@ -1,17 +1,22 @@
 # 🔐 Braxton's Cybersecurity Portfolio
+*TryHackMe: BenFrank17*
 
-This repository documents my journey learning cybersecurity through hands-on projects and TryHackMe rooms.
+## 📚 Resources Library
+- **[Cheatsheets](resources/cheatsheets/)**: Git, Wireshark, password tools
+- **[Tools Directory](resources/tools/)**: Essential cybersecurity tools  
+- **[Learning Path](resources/learning/)**: Roadmap and study resources
 
-## 🚀 Featured Projects
-- **Port Scanner**: Python tool for network reconnaissance
-- **TryHackMe Writeups**: Documentation of completed rooms
-- **Learning Journey**: Progress tracking and skill development
+## 🚀 Quick Updates
+Run "update-progress.bat" to easily update your progress!
 
-## 📊 Current Progress
-- TryHackMe rooms completed: Multiple easy rooms
-- Custom tools built: Port scanner with enhancements
-- Skills developed: Python, networking, OSINT, documentation
+## 🛠️ My Projects
+- **Port Scanner Suite**: Basic and enhanced versions
+- **TryHackMe Writeups**: Documented room completions
+- **Learning Journal**: Tool development journey
 
-## 📫 Connect
-- GitHub: https://github.com/Ben-Frank17
-- TryHackMe: [YourUsernameHere]
+## 📊 Current Stats
+- TryHackMe Rooms: 10+ completed
+- Custom Tools: 2 and growing
+- Skills: Python, networking, OSINT, automation
+
+*Now with organized resources and easy updates!'

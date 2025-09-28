@@ -1,0 +1,21 @@
+MY CYBERSECURITY JOURNEY ROADMAP
+
+SHORT TERM (1-2 months):
+- [ ] Establish consistent documentation habit
+- [ ] Complete TryHackMe Beginner path
+- [ ] Build 3-5 simple Python security tools
+- [ ] Master basic Git workflows
+
+MEDIUM TERM (3-6 months):
+- [ ] Complete Junior Penetration Tester path
+- [ ] Contribute to open source project
+- [ ] Develop personal learning style
+- [ ] Build professional network
+
+LONG TERM (6+ months):
+- [ ] Create original security research/tools
+- [ ] Participate in bug bounty programs
+- [ ] Mentor other beginners
+- [ ] Transition to security role
+
+SUCCESS = CONSISTENCY × TIME

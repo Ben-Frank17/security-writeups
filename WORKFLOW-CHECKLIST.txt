@@ -1,0 +1,55 @@
+# PORTFOLIO WORKFLOW CHECKLIST
+# Print this and follow each time you complete a TryHackMe room
+
+## BEFORE STARTING A ROOM
+☐ Check that you're in: C:\Users\beckb\Documents\security-writeups
+☐ Have your workbook template ready (printed or digital)
+
+## DURING THE ROOM
+☐ Take quick notes of commands used
+☐ Screenshot important steps/flags
+☐ Note any challenges you overcame
+
+## IMMEDIATELY AFTER COMPLETION (5-10 MINUTES)
+
+### STEP 1: Generate Writeup Template
+[ ] Open PowerShell in your portfolio folder
+[ ] Run: .\new-writeup.ps1 -RoomName "ACTUAL ROOM NAME"
+[ ] Verify: "Writeup template created" message appears
+
+### STEP 2: Fill in the Writeup
+[ ] Open the generated file in tryhackme/easy-rooms/
+[ ] Fill in these sections (5-10 minutes max):
+    - 3 things you learned
+    - Tools/commands used  
+    - One real-world application
+[ ] Save the file
+
+### STEP 3: Update Progress
+[ ] Double-click: update-progress.bat
+[ ] Enter your current total room count
+[ ] Press Enter and wait for success message
+
+### STEP 4: Commit to GitHub
+[ ] In PowerShell, run: git add .
+[ ] Run: git status (quick check)
+[ ] Run: git commit -m "Completed [Room Name] room"
+[ ] Run: git push origin main
+
+## WEEKLY MAINTENANCE (Sundays, 5 minutes)
+☐ Run update-progress.bat with latest room count
+☐ Quick review of weekly learnings
+☐ Add any new resources discovered
+
+## TROUBLESHOOTING
+❌ "File not found" -> Run pwd to check directory
+❌ Script errors -> Make sure you're in security-writeups folder
+❌ Git issues -> Check internet connection and directory
+
+## SUCCESS METRICS
+✅ Writeup completed within 15 minutes of finishing room
+✅ Progress updated accurately
+✅ GitHub commit successful
+✅ Learning documented while fresh
+
+Remember: Consistency > Perfection. Just document and move on!

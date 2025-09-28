@@ -1,0 +1,101 @@
+###############################################################################
+#                     PORTFOLIO WORKFLOW CHECKLIST                           #
+#                  Print this and keep by your computer                      #
+###############################################################################
+
+BEFORE STARTING A TRYHACKME ROOM
+═══════════════════════════════════════════════════════════════════════════════
+□ 1. Open PowerShell and navigate to portfolio folder:
+   → Type: cd C:\Users\beckb\Documents\security-writeups
+   → Verify with: pwd
+
+□ 2. Have your writeup workbook template ready (printed or digital)
+
+DURING THE ROOM - QUICK NOTES
+═══════════════════════════════════════════════════════════════════════════════
+□ Commands used: _________________________________
+□ Key tools: _____________________________________
+□ Challenges: ____________________________________
+□ Screenshots taken: □ Yes □ No
+
+IMMEDIATELY AFTER ROOM COMPLETION (10-15 MINUTES TOTAL)
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: GENERATE WRITEUP TEMPLATE
+───────────────────────────────────────────────────────────────────────────────
+□ Open PowerShell in portfolio folder (if not already open)
+□ Run this command (replace with actual room name):
+   .\new-writeup.ps1 -RoomName "ACTUAL ROOM NAME HERE"
+□ Wait for: "✅ Writeup template created" message
+
+STEP 2: FILL IN THE WRITEUP (5-10 MINUTES MAX)
+───────────────────────────────────────────────────────────────────────────────
+□ Open the generated file in: tryhackme/easy-rooms/
+□ Fill in these 3 sections ONLY:
+   
+   WHAT I LEARNED (3 bullet points):
+   • ___________________________________________________
+   • ___________________________________________________
+   • ___________________________________________________
+   
+   TOOLS & COMMANDS USED:
+   • ___________________________________________________
+   • ___________________________________________________
+   
+   REAL-WORLD APPLICATION (1 sentence):
+   ____________________________________________________
+   ____________________________________________________
+
+□ Save the file
+
+STEP 3: UPDATE YOUR PROGRESS
+───────────────────────────────────────────────────────────────────────────────
+□ Double-click: update-progress.bat (on your desktop or in the folder)
+□ When prompted, enter your CURRENT TOTAL ROOM COUNT: ________
+□ Press Enter
+□ Wait for "SUCCESS" message
+
+STEP 4: COMMIT TO GITHUB
+───────────────────────────────────────────────────────────────────────────────
+□ In PowerShell, run: git add .
+□ Run: git status (quick visual check)
+□ Run: git commit -m "Completed [Room Name] room"
+□ Run: git push origin main
+□ Wait for successful push message
+
+WEEKLY MAINTENANCE (SUNDAY EVENING - 5 MINUTES)
+═══════════════════════════════════════════════════════════════════════════════
+□ Run update-progress.bat with latest room count
+□ Quick mental review of week's learnings
+□ Add any new resources to resources/ folder
+
+TROUBLESHOOTING QUICK GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+❌ "File not found" error? 
+   → Run: pwd (must show: C:\Users\beckb\Documents\security-writeups)
+
+❌ Script not working?
+   → Make sure you're in the right folder
+   → Try the PowerShell command instead of batch file
+
+❌ Git errors?
+   → Check internet connection
+   → Verify you're in correct directory
+
+SUCCESS METRICS - CHECK AFTER EACH SESSION
+═══════════════════════════════════════════════════════════════════════════════
+✅ Writeup completed within 15 minutes of finishing room: □
+✅ Progress updated accurately: □  
+✅ GitHub commit successful: □
+✅ Learning documented while fresh: □
+
+IMPORTANT REMINDERS
+═══════════════════════════════════════════════════════════════════════════════
+★ Consistency > Perfection - just document and move on!
+★ 10 good writeups > 1 perfect writeup
+★ The habit is more important than the content
+★ Your future self will thank you for the documentation
+
+###############################################################################
+#                          END OF CHECKLIST                                   #
+###############################################################################

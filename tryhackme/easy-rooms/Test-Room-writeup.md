@@ -1,4 +1,4 @@
-# TryHackMe: Basic Pentesting
+# TryHackMe: Test Room
 *Difficulty: Easy*  
 *Date Completed: 2025-09-27*
 

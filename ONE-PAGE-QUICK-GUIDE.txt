@@ -1,0 +1,36 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                 QUICK WORKFLOW - POST-ROOM COMPLETION                        ║
+║                  (Keep this by your keyboard)                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. 🚀 OPEN POWERSHELL IN PORTFOLIO FOLDER
+   → cd C:\Users\beckb\Documents\security-writeups
+
+2. 📝 GENERATE WRITEUP TEMPLATE
+   → .\new-writeup.ps1 -RoomName "Room Name"
+
+3. ✏️  FILL IN TEMPLATE (5 mins max)
+   • 3 things learned
+   • 2 tools used  
+   • 1 real-world use
+
+4. 📊 UPDATE PROGRESS
+   → Double-click update-progress.bat
+   → Enter current room count
+
+5. 🔄 COMMIT TO GITHUB
+   → git add .
+   → git commit -m "Completed [Room] room"
+   → git push origin main
+
+6. ✅ DONE! Move to next room.
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                             TROUBLESHOOTING                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+❌ Error? → Run: pwd (must be in security-writeups folder)
+❌ Script issue? → Try PowerShell command directly
+❌ Git problem? → Check internet and directory
+
+★ Remember: Consistency beats perfection every time!

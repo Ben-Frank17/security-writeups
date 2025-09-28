@@ -1,0 +1,23 @@
+QUICK WORKFLOW - POST-ROOM COMPLETION
+======================================
+
+1. OPEN POWERSHELL IN PORTFOLIO FOLDER
+
+2. GENERATE WRITEUP:
+   .\new-writeup.ps1 -RoomName "Room Name"
+
+3. FILL IN TEMPLATE (5 mins):
+   - 3 things learned
+   - Tools used
+   - Real-world use
+
+4. UPDATE PROGRESS:
+   Double-click update-progress.bat
+   Enter room count
+
+5. COMMIT TO GITHUB:
+   git add .
+   git commit -m "Completed room"
+   git push origin main
+
+DONE! 🎉

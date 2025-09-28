@@ -1,0 +1,40 @@
+# TRYHACKME WRITEUP WORKBOOK
+# Fill this out for each room, then copy to a .md file
+
+## ROOM INFORMATION
+Room Name: _________________________
+Difficulty: 🟢 Easy 🟡 Medium 🔴 Hard
+Date Completed: ____________________
+Time Spent: ________________________
+Room Link: _________________________
+
+## WHAT I LEARNED (3-5 key points)
+1. _________________________________
+2. _________________________________
+3. _________________________________
+4. _________________________________
+5. _________________________________
+
+## KEY COMMANDS USED
+
+## TOOLS UTILIZED
+- _________________________________
+- _________________________________
+- _________________________________
+
+## CHALLENGES & SOLUTIONS
+Challenge: _________________________
+Solution: __________________________
+
+Challenge: _________________________
+Solution: __________________________
+
+## REAL-WORLD APPLICATION
+How this applies to actual security work:
+_______________________________________
+
+## RATING & NOTES
+Enjoyment: ⭐⭐⭐⭐⭐
+Difficulty: ⭐⭐⭐⭐⭐
+Would recommend: ✅ ❌
+Additional notes: ____________________

@@ -21,3 +21,9 @@
 - Web application security
 
 *Check your TryHackMe profile for exact room count and update this file!*
+
+*Last script update: 2025-09-27 - Rooms: 15*
+
+*Last update: 2025-09-27 - Rooms completed: 16*
+
+*Last update: 2025-09-27 - Rooms completed: 19*

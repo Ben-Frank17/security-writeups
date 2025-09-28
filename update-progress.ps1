@@ -3,10 +3,14 @@ param(
     [int]$RoomCount = 10
 )
 
-# Update progress tracker date
+# Update progress tracker with current date
 $Date = Get-Date -Format "yyyy-MM-dd"
 Write-Host "Updating progress tracker..." -ForegroundColor Yellow
-Add-Content -Path "tryhackme\progress-tracker.md" -Value "`n*Last script update: $Date - Rooms: $RoomCount*"
 
-Write-Host "✅ Progress tracker updated!" -ForegroundColor Green
-Write-Host "📊 Room count: $RoomCount" -ForegroundColor Cyan
+# Add a new update entry to the progress tracker
+$UpdateEntry = "`n*Last update: $Date - Rooms completed: $RoomCount*"
+Add-Content -Path "tryhackme\progress-tracker.md" -Value $UpdateEntry
+
+Write-Host "SUCCESS: Progress tracker updated!" -ForegroundColor Green
+Write-Host "Rooms completed: $RoomCount" -ForegroundColor Cyan
+Write-Host "Date recorded: $Date" -ForegroundColor Yellow
